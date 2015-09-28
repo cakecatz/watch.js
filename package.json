@@ -1,0 +1,17 @@
+{
+  "name": "watch.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "watch.js",
+  "bin": "./watch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryo Narita",
+  "license": "MIT",
+  "dependencies": {
+    "exec-sh": "^0.2.0",
+    "hash-files": "^1.0.0",
+    "minimist": "^1.2.0"
+  }
+}
