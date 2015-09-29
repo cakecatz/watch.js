@@ -3,6 +3,7 @@ import minimist from 'minimist';
 import crypto from 'crypto';
 import path from 'path';
 import execshell from 'exec-sh';
+import childProcess from 'child_process';
 
 const argv = minimist(process.argv.slice(2));
 
@@ -25,7 +26,7 @@ const getHash = (_dir, callback) => {
   const md5sum = crypto.createHash('md5');
   const commandArgs = ['-t', '-r', _dir];
   let fileList = [];
-  child_process.execFile('md5deep', commandArgs, (err, stdout, stderr) => {
+  childProcess.execFile('md5deep', commandArgs, (err, stdout, stderr) => {
     if (err) {
       console.log(err);
     }

@@ -5,7 +5,7 @@
   "main": "watch.js",
   "bin": "./lib/watch.js",
   "scripts": {
-    "compile": "babel ./src/watch.js -o ./lib/watch.js",
+    "compile": "babel ./src -d ./lib",
     "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
