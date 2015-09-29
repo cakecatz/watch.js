@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "watch.js",
-  "bin": "./watch.js",
+  "bin": "./lib/watch.js",
   "scripts": {
+    "compile": "babel ./src/watch.js -o ./lib/watch.js",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryo Narita",
