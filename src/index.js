@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import minimist from 'minimist';
 import crypto from 'crypto';
 import path from 'path';
@@ -58,5 +57,3 @@ const p = setInterval(() => {
     previousHash = hash;
   });
 }, interval);
-
-
