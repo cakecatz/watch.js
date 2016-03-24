@@ -2,12 +2,12 @@
 
 ## Install
 
-```
-brea install md5deep
+```bash
+brew install md5deep
 npm install -g cakecatz/watch.js
 ```
 
 ## Usage
-```
+```bash
 watch.js 'echo 1' ./dir
 ```
